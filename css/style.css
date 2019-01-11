@@ -1,0 +1,83 @@
+@media (min-width: 320px) { 
+    body{
+        background-color: rgb(236, 240, 245);
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    a{
+        text-decoration: none; 
+        color: black;
+    }
+    li{
+        list-style-type: disc;
+    }
+    nav#navbar{
+        margin-top: 10%;
+    }
+    a.nav-link{
+        display: block;
+        border: 1px solid #000;
+        width: 100%; 
+        list-style-type: none;
+        padding: 5px 0 5px 4px;
+    }
+    a:hover{
+        color: rgb(136, 182, 170);
+        font-weight: 900;
+    }
+    a.nav-link:hover{
+        background-color: rgb(136, 182, 170);
+        color: #000;
+        
+    }
+    header{
+        font-size: 1.8em;
+        margin: 5px 0 0;
+    }
+    ul#menu{
+        font-size: 1.2em;
+        margin: 15px 0 0;
+        padding-left: 0px;
+    }
+    section#introduction.main-section{
+        margin: -25px auto;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    p.code{
+        background-color: aliceblue;
+        border: 5px inset rgb(204, 200, 204);
+        padding: 4px;
+    }
+    #copyright{
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    header{
+        font-size: 1.6em;
+    }
+    nav#navbar{
+        float: left;
+        position: fixed;
+        height: 100vh;
+        background-color: rgb(236, 240, 245);
+        margin: -5px auto;
+    }
+    a.nav-link{
+        padding: 6px 0 6px 5px;
+    }
+    main#main-doc{
+        margin: 25px 0 0 0;
+    }
+    .main-section{
+        margin: 0px 0 0 250px;
+    }
+    article{
+        margin: 0 0 0 5px;
+    }
+    p.code{
+        width: 55%;
+    }
+}

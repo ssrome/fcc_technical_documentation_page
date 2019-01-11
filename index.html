@@ -16,7 +16,6 @@
 
   </head>
   <body>
-     
         <nav id="navbar">
           <header>SQL Documentation</header>
           <ul id="menu">
@@ -35,7 +34,7 @@
         </nav>
         <main id="main-doc">
         <section class="main-section" id="Introduction">
-          <header>Introduction</header>
+          <header><h3>Introduction</h3></header>
           <article>
               <p>
                 SQL is a language for accessing and manipulating databases. It stands for Structured Query Language and became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.
@@ -44,8 +43,7 @@
          
         </section>
         <section class="main-section" id="What_Can_SQL_do?">
-          <header>What Can SQL do?</header>
-          <p>
+          <header><h3>What Can SQL do?</h3></header>
             <ul>
               <li>SQL can execute queries against a database</li>
               <li>SQL can retrieve data from a database</li>
@@ -58,10 +56,9 @@
               <li>SQL can create views in a database</li>
               <li>SQL can set permissions on tables, procedures, and views</li>
             </ul>
-          </p>
         </section>
         <section class="main-section" id="SQL_Select">
-          <header>SQL Select</header>
+          <header><h3>SQL Select</h3></header>
           <p>
             The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
           </p>
@@ -81,7 +78,7 @@
           </p>
         </section>
         <section class="main-section" id="SQL_Where">
-          <header>SQL Where</header>
+          <header><h3>SQL Where</h3></header>
           <p>
             The WHERE clause is used to filter records.
 
@@ -97,15 +94,13 @@
           </p>
         </section>
         <section class="main-section" id="SQL_And,_Or,_Not">
-          <header>SQL And, Or, Not</header>
-          <p>
+          <header><h3>SQL And, Or, Not</h3></header>
             The WHERE clause can be combined with AND, OR, and NOT operators. The AND and OR operators are used to filter records based on more than one condition:
             <ul>
               <li>The AND operator displays a record if all the conditions separated by AND are TRUE.</li>
               <li>The OR operator displays a record if any of the conditions separated by OR is TRUE.</li>
             </ul>
               The NOT operator displays a record if the condition(s) is NOT TRUE.
-          </p>
           <h4>AND Syntax</h4>
           <p class="code">
             <code>
@@ -116,19 +111,23 @@
           </p>  
           <h4>OR Syntax</h4>
           <p class="code">
+            <code>
             SELECT column1, column2, ...<br/>
             FROM table_name<br/>
             WHERE condition1 OR condition2 OR condition3 ...;
+            </code>
           </p>
           <h4>NOT Syntax</h4>
           <p class="code">
+            <code>
               SELECT column1, column2, ...<br/>
               FROM table_name<br/>
               WHERE NOT condition;
+            </code>
           </p>
         </section>
         <section class="main-section" id="SQL_Order_By">
-          <header>SQL Order By</header>
+          <header><h3>SQL Order By</h3></header>
           <p>
               The ORDER BY keyword is used to sort the result-set in ascending or descending order. 
               <br/><br/>
@@ -136,21 +135,21 @@
           </p>
           <h4>ORDER BY Syntax</h4>
           <p class="code">
+            <code>
               SELECT column1, column2, ...<br/>
               FROM table_name<br/>
               ORDER BY column1, column2, ... ASC|DESC; 
+            </code>
           </p>
         </section>
         <section class="main-section" id="SQL_Like">
-          <header>SQL Like</header>
-          <p>
+          <header><h3>SQL Like</h3></header>
               The LIKE operator is used in a WHERE clause to search for a specified pattern in a column. There are two wildcards used in conjunction with the LIKE operator:
             <ul>
               <li>% - The percent sign represents zero, one, or multiple characters</li>
               <li>_ - The underscore represents a single character</li>
             </ul>   
               The percent sign and the underscore can also be used in combinations! 
-          </p>  
           <h4>LIKE Syntax</h4>
           <p class="code">  
             <code>
@@ -161,7 +160,7 @@
           </p>
         </section>
         <section class="main-section" id="SQL_Count,_Avg,_Sum">
-          <header>SQL Count, Avg, Sum</header>
+          <header><h3>SQL Count, Avg, Sum</h3></header>
           <p>
               The COUNT() function returns the number of rows that matches a specified criteria.<br/><br/>
               The AVG() function returns the average value of a numeric column.<br/><br/>
@@ -193,7 +192,7 @@
           </p>
         </section>
         <section class="main-section" id="SQL_Between">
-          <header>SQL Between</header>
+          <header><h3>SQL Between</h3></header>
           <p>
               The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates. The BETWEEN operator is inclusive: begin and end values are included. 
           </p>
@@ -207,7 +206,7 @@
           </p>
         </section>
         <section class="main-section" id="SQL_Group_By">
-          <header>SQL Group By</header>
+          <header><h3>SQL Group By</h3></header>
           <p>
               The GROUP BY statement is often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns.
           </p>
@@ -223,7 +222,7 @@
           </p>
         </section>
         <section class="main-section" id="References">
-          <header>References</header>
+          <header><h3>References</h3></header>
           <article>
             <p>
               All documentation, from this page, are taken from <a href="https://www.w3schools.com/sql/default.asp" target="_blank">W3Schools</a>
